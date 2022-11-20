@@ -1,4 +1,6 @@
 import '../styles/globals.css';
+import '../styles/antd-default.css';
+import '../styles/antd-dark.css';
 import 'prismjs/themes/prism-tomorrow.css';
 
 function MyApp({ Component, pageProps }) {

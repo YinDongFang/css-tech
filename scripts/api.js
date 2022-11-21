@@ -1,4 +1,7 @@
+const fs = require('fs');
+const path = require('path');
 const axios = require('axios');
+const { load, dump } = require('js-yaml');
 
 const DEFAULT_PER_PAGE = 100;
 
@@ -16,7 +19,7 @@ async function getRepoStargazers(repo, token, page) {
   });
 }
 
-async function getRepoCreatedAt(repo, token) {
+exports.getRepoCreatedAt = async function getRepoCreatedAt(repo, token) {
   const { data } = await axios.get(`https://api.github.com/repos/${repo}`, {
     headers: {
       Accept: 'application/vnd.github.v3.star+json',
@@ -27,7 +30,7 @@ async function getRepoCreatedAt(repo, token) {
   return data.created_at;
 }
 
-async function getRepoStarRecords(repo, token) {
+exports.getRepoStarRecords = async function getRepoStarRecords(repo, token) {
   const patchRes = await getRepoStargazers(repo, token);
 
   const headerLink = patchRes.headers['link'] || '';
@@ -72,7 +75,7 @@ async function getRepoStarRecords(repo, token) {
   return starRecords;
 }
 
-async function getRepoLogoUrl(repo, token) {
+exports.getRepoLogoUrl = async function getRepoLogoUrl(repo, token) {
   const owner = repo.split('/')[0];
   const { data } = await axios.get(`https://api.github.com/users/${owner}`, {
     headers: {
@@ -84,9 +87,23 @@ async function getRepoLogoUrl(repo, token) {
   return data.avatar_url;
 }
 
-async function load() {
-  const data = await getRepoCreatedAt('gajus/react-css-modules');
-  console.log(data);
+const YAML_DIR_PATH = path.join(process.cwd(), 'data');
+
+exports.getProjects = function getProjects() {
+  const projectFiles = fs.readdirSync(path.join(YAML_DIR_PATH, 'projects'));
+  const projects = projectFiles.map(filename => load(fs.readFileSync(path.join(YAML_DIR_PATH, 'projects', filename))));
+  return projects;
 }
 
-load();
+exports.updateVersion = async function updateVersion(project) {
+  const npmPkgName = project.npm || project.repo.split('/')[1];
+
+  const { data } = await axios.get(`https://registry.npmjs.org/${npmPkgName}`);
+
+  project.versions = Object.keys(data.versions).map((version) => ({
+    version,
+    time: data.time[version].substr(0, 7).replace('-', '/'),
+  }));
+
+  return project;
+}

@@ -16,8 +16,12 @@ export function getProjectsData() {
   });
 
   categorys.forEach(category => {
-    category.projects = projects.filter(project => project.category === category.name);
+    category.projects = projects.filter(project => project.category === category.name).sort(({ create: a }, { create: b }) => (a > b ? 1 : -1));
   });
 
-  return categorys;
+  return categorys.sort((ca, cb) => {
+    const ta = ca.time ? ca.time : ca.projects[0].create;
+    const tb = cb.time ? cb.time : cb.projects[0].create;
+    return ta > tb ? 1 : -1;
+  });
 }

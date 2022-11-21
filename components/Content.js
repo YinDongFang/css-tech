@@ -17,7 +17,12 @@ export function Content({ categorys }) {
     .map(category => {
       return {
         ...category,
-        projects: category.projects?.filter(project => before(project.create, formatted))
+        projects: category.projects?.filter(project => before(project.create, formatted)).map(project => {
+          return {
+            ...project,
+            version: project.versions.filter(version => before(version.time, formatted)).pop()?.version
+          }
+        })
       }
     })
     .filter(category => {
@@ -30,7 +35,7 @@ export function Content({ categorys }) {
 
   return (
     <ConfigProvider prefixCls={theme === 'dark' ? 'antd-dark' : 'antd-default'}>
-      <h1 className='text-xl text-black dark:text-white opacity-70'>Date: {formatted}</h1>
+      <h1 className='text-xl text-black dark:text-white'>Date: {formatted}</h1>
       <Slider
         value={step}
         min={0}

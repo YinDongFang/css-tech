@@ -1,4 +1,4 @@
-import { getData } from '../utils/data-utils';
+import { getProjectsData } from '../utils/data-utils';
 import Footer from '../components/Footer';
 import Layout, { GradientBackground } from '../components/Layout';
 import { getGlobalData } from '../utils/global-data';
@@ -56,7 +56,7 @@ export default function Index({ categorys, globalData }) {
 }
 
 export function getStaticProps() {
-  const categorys = getData();
+  const categorys = getProjectsData();
   const globalData = getGlobalData();
 
   return { props: { categorys, globalData } };

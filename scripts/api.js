@@ -48,8 +48,6 @@ async function getRepoStarRecords(repo, token) {
     };
   }
 
-  console.log(pageCount);
-
   const requestPages = new Array(pageCount).fill(0).map((_, i) => i + 1);
   const resArray = await Promise.all(
     requestPages.map((page) => getRepoStargazers(repo, token, page))
@@ -87,7 +85,7 @@ async function getRepoLogoUrl(repo, token) {
 }
 
 async function load() {
-  const data = await getRepoStarRecords('slidevjs/slidev', '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');
+  const data = await getRepoCreatedAt('gajus/react-css-modules');
   console.log(data);
 }
 

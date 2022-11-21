@@ -1,0 +1,13 @@
+repo: windicss/windicss
+category: Atomic CSS
+create: 2020/12
+home: https://cn.windicss.org/
+icon: https://cn.windicss.org/assets/logo.svg
+integrations:
+  vite: vite-plugin-windicss
+  webpack: windicss-webpack-plugin
+  rollup: rollup-plugin-windicss
+  postcss: postcss-windicss
+  svelte: svelte-windicss-preprocess
+  nuxt: nuxt-windicss
+  vscode: WindiCSS IntelliSense

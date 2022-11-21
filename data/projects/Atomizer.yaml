@@ -1,0 +1,14 @@
+repo: acss-io/atomizer
+category: Atomic CSS
+create: 2014/10
+home: https://acss.io/
+icon: https://acss.io/images/logo.svg
+integrations:
+  esbuild: atomizer-plugins
+  vite: atomizer-plugins
+  webpack: webpack-atomizer-loader
+  rollup: atomizer-plugins
+  grunt: grunt-atomizer
+  gulp: gulp-atomizer
+  next: postcss-atomizer
+  nuxt: nuxt-atomizer

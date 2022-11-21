@@ -1,0 +1,7 @@
+repo: less/less.js
+category: CSS Pre/Postprocessor
+create: 2010/02
+home: https://lesscss.org/
+icon: https://lesscss.org/public/img/less_logo.png
+integrations:
+  webpack: less-loader

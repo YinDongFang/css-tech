@@ -1,0 +1,7 @@
+repo: postcss/postcss
+category: CSS Pre/Postprocessor
+create: 2013/09
+home: https://postcss.org/
+icon: https://postcss.org/assets/postcss.83d93145.svg
+integrations:
+  webpack: postcss-loader

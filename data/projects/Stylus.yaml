@@ -1,0 +1,7 @@
+repo: stylus/stylus
+category: CSS Pre/Postprocessor
+create: 2010/12
+home: https://stylus-lang.com/
+icon: https://stylus-lang.com/logo.svg
+integrations:
+  webpack: stylus-loader

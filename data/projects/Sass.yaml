@@ -1,0 +1,7 @@
+repo: sass/sass
+category: CSS Pre/Postprocessor
+create: 2010/09
+home: https://sass-lang.com/
+icon: https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg
+integrations:
+  webpack: sass-loader

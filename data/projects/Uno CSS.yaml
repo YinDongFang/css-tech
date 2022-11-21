@@ -1,0 +1,10 @@
+repo: unocss/unocss
+category: Atomic CSS
+create: 2021/09
+home: https://uno.antfu.me/
+icon: https://raw.githubusercontent.com/unocss/unocss/main/playground/public/icon-gray.svg
+integrations:
+  vite: '@unocss/vite'
+  webpack: '@unocss/webpack'
+  nuxt: '@unocss/nuxt'
+  vscode: UnoCSS

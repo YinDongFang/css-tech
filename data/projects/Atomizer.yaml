@@ -12,3 +12,200 @@ integrations:
   gulp: gulp-atomizer
   next: postcss-atomizer
   nuxt: nuxt-atomizer
+versions:
+  - version: 0.2.0
+    time: 2015/02
+  - version: 0.2.1
+    time: 2015/02
+  - version: 0.2.2
+    time: 2015/02
+  - version: 0.2.3
+    time: 2015/02
+  - version: 0.2.4
+    time: 2015/02
+  - version: 0.2.5
+    time: 2015/02
+  - version: 1.0.0-alpha.1
+    time: 2015/03
+  - version: 1.0.0
+    time: 2015/03
+  - version: 2.0.0-alpha.1
+    time: 2015/03
+  - version: 2.0.0-alpha.2
+    time: 2015/03
+  - version: 2.0.0-alpha.3
+    time: 2015/03
+  - version: 2.0.0-beta.1
+    time: 2015/03
+  - version: 2.0.0-beta.2
+    time: 2015/03
+  - version: 2.0.0-beta.3
+    time: 2015/03
+  - version: 2.0.0-beta.4
+    time: 2015/03
+  - version: 2.0.0-beta.5
+    time: 2015/03
+  - version: 2.0.0-beta.6
+    time: 2015/03
+  - version: 2.0.0-beta.7
+    time: 2015/03
+  - version: 2.0.0-beta.8
+    time: 2015/04
+  - version: 2.0.0-beta.9
+    time: 2015/04
+  - version: 2.0.0-beta.10
+    time: 2015/04
+  - version: 3.0.0-alpha.1
+    time: 2015/04
+  - version: 3.0.0-alpha.2
+    time: 2015/04
+  - version: 3.0.0-alpha.3
+    time: 2015/04
+  - version: 3.0.0-alpha.4
+    time: 2015/04
+  - version: 3.0.0-alpha.5
+    time: 2015/04
+  - version: 3.0.0-alpha.6
+    time: 2015/04
+  - version: 3.0.0-alpha.7
+    time: 2015/04
+  - version: 3.0.0
+    time: 2015/05
+  - version: 3.0.1
+    time: 2015/05
+  - version: 3.0.2
+    time: 2015/05
+  - version: 3.0.3
+    time: 2015/05
+  - version: 3.0.4
+    time: 2015/06
+  - version: 3.0.5
+    time: 2015/06
+  - version: 3.0.6
+    time: 2015/06
+  - version: 3.1.0
+    time: 2015/07
+  - version: 3.1.1
+    time: 2015/07
+  - version: 3.1.2
+    time: 2015/07
+  - version: 3.1.3
+    time: 2015/07
+  - version: 3.2.0
+    time: 2015/07
+  - version: 3.2.1
+    time: 2015/09
+  - version: 3.3.0
+    time: 2015/11
+  - version: 3.3.1
+    time: 2015/11
+  - version: 3.3.2
+    time: 2015/11
+  - version: 3.3.3
+    time: 2016/03
+  - version: 3.3.4
+    time: 2016/04
+  - version: 3.3.5
+    time: 2016/07
+  - version: 3.3.6
+    time: 2016/07
+  - version: 3.3.7
+    time: 2016/09
+  - version: 3.3.8
+    time: 2016/11
+  - version: 3.3.10
+    time: 2016/12
+  - version: 3.3.11
+    time: 2017/01
+  - version: 3.3.12
+    time: 2017/02
+  - version: 3.4.0
+    time: 2017/03
+  - version: 3.4.1
+    time: 2017/05
+  - version: 3.4.2
+    time: 2017/06
+  - version: 3.4.3
+    time: 2017/06
+  - version: 3.4.4
+    time: 2017/06
+  - version: 3.4.5
+    time: 2017/06
+  - version: 3.4.6
+    time: 2017/10
+  - version: 3.4.7
+    time: 2018/01
+  - version: 3.4.8
+    time: 2018/09
+  - version: 3.4.9
+    time: 2018/11
+  - version: 3.5.0
+    time: 2018/11
+  - version: 3.5.1
+    time: 2018/11
+  - version: 3.5.2
+    time: 2018/12
+  - version: 3.5.3
+    time: 2019/02
+  - version: 3.6.0
+    time: 2019/06
+  - version: 3.6.1
+    time: 2019/09
+  - version: 3.6.2
+    time: 2019/10
+  - version: 3.6.3
+    time: 2020/03
+  - version: 3.7.0
+    time: 2020/03
+  - version: 3.7.1
+    time: 2020/07
+  - version: 3.7.2
+    time: 2020/10
+  - version: 3.7.3
+    time: 2020/10
+  - version: 3.8.0
+    time: 2020/11
+  - version: 3.9.0
+    time: 2021/02
+  - version: 3.9.1
+    time: 2021/02
+  - version: 3.9.2
+    time: 2021/07
+  - version: 3.10.0
+    time: 2021/08
+  - version: 3.11.0
+    time: 2021/09
+  - version: 3.12.0
+    time: 2022/03
+  - version: 3.13.0
+    time: 2022/03
+  - version: 3.14.0
+    time: 2022/06
+  - version: 3.14.1
+    time: 2022/06
+  - version: 3.15.0
+    time: 2022/06
+  - version: 3.16.0
+    time: 2022/07
+  - version: 3.16.1
+    time: 2022/07
+  - version: 3.16.2
+    time: 2022/07
+  - version: 3.17.0
+    time: 2022/08
+  - version: 3.18.0
+    time: 2022/08
+  - version: 3.18.1
+    time: 2022/08
+  - version: 3.18.2
+    time: 2022/08
+  - version: 3.19.0
+    time: 2022/08
+  - version: 3.20.0
+    time: 2022/08
+  - version: 3.21.0
+    time: 2022/09
+  - version: 3.21.1
+    time: 2022/09
+  - version: 3.21.2
+    time: 2022/09

@@ -19,7 +19,7 @@ async function getRepoStargazers(repo, token, page) {
   });
 }
 
-exports.getRepoCreatedAt = async function getRepoCreatedAt(repo, token) {
+exports.getRepoCreatedAt = async function (repo, token) {
   const { data } = await axios.get(`https://api.github.com/repos/${repo}`, {
     headers: {
       Accept: 'application/vnd.github.v3.star+json',
@@ -30,7 +30,7 @@ exports.getRepoCreatedAt = async function getRepoCreatedAt(repo, token) {
   return data.created_at;
 }
 
-exports.getRepoStarRecords = async function getRepoStarRecords(repo, token) {
+exports.getRepoStarRecords = async function (repo, token) {
   const patchRes = await getRepoStargazers(repo, token);
 
   const headerLink = patchRes.headers['link'] || '';
@@ -75,7 +75,7 @@ exports.getRepoStarRecords = async function getRepoStarRecords(repo, token) {
   return starRecords;
 }
 
-exports.getRepoLogoUrl = async function getRepoLogoUrl(repo, token) {
+exports.getRepoLogoUrl = async function (repo, token) {
   const owner = repo.split('/')[0];
   const { data } = await axios.get(`https://api.github.com/users/${owner}`, {
     headers: {
@@ -89,21 +89,41 @@ exports.getRepoLogoUrl = async function getRepoLogoUrl(repo, token) {
 
 const YAML_DIR_PATH = path.join(process.cwd(), 'data');
 
-exports.getProjects = function getProjects() {
+exports.getProjects = function () {
   const projectFiles = fs.readdirSync(path.join(YAML_DIR_PATH, 'projects'));
-  const projects = projectFiles.map(filename => load(fs.readFileSync(path.join(YAML_DIR_PATH, 'projects', filename))));
+  const projects = projectFiles.map(filename => {
+    const project = load(fs.readFileSync(path.join(YAML_DIR_PATH, 'projects', filename)));
+    project.filename = filename;
+    return project;
+  });
   return projects;
 }
 
-exports.updateVersion = async function updateVersion(project) {
+exports.saveProjects = function (projects) {
+  projects.forEach(project => {
+    const filename = project.filename;
+    delete project.filename;
+    fs.writeFileSync(path.join(YAML_DIR_PATH, 'projects', filename), dump(project));
+  });
+}
+
+exports.updateVersion = async function (project) {
   const npmPkgName = project.npm || project.repo.split('/')[1];
 
   const { data } = await axios.get(`https://registry.npmjs.org/${npmPkgName}`);
 
-  project.versions = Object.keys(data.versions).map((version) => ({
-    version,
-    time: data.time[version].substr(0, 7).replace('-', '/'),
-  }));
+  project.versions = Object.keys(data.versions)
+    .filter(version => {
+      if (npmPkgName === 'tailwindcss') {
+        return !version.includes('insiders')
+      } else {
+        return true;
+      }
+    })
+    .map((version) => ({
+      version,
+      time: data.time[version].substr(0, 7).replace('-', '/'),
+    }));
 
   return project;
 }

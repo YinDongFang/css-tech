@@ -5,3 +5,406 @@ home: https://sass-lang.com/
 icon: https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg
 integrations:
   webpack: sass-loader
+versions:
+  - version: 0.4.0
+    time: 2017/06
+  - version: 0.4.1
+    time: 2017/06
+  - version: 0.4.2
+    time: 2017/06
+  - version: 0.4.3
+    time: 2017/06
+  - version: 0.5.0
+    time: 2017/06
+  - version: 1.0.0-beta.1
+    time: 2017/06
+  - version: 1.0.0-beta.2
+    time: 2017/07
+  - version: 1.0.0-beta.3
+    time: 2017/11
+  - version: 1.0.0-beta.4
+    time: 2017/12
+  - version: 1.0.0-beta.5.1
+    time: 2018/02
+  - version: 1.0.0-beta.5.2
+    time: 2018/02
+  - version: 1.0.0-beta.5.3
+    time: 2018/03
+  - version: 1.0.0-rc.1
+    time: 2018/03
+  - version: 1.0.0
+    time: 2018/03
+  - version: 1.1.0
+    time: 2018/03
+  - version: 1.1.1
+    time: 2018/03
+  - version: 1.2.0
+    time: 2018/04
+  - version: 1.2.1
+    time: 2018/04
+  - version: 1.3.0
+    time: 2018/04
+  - version: 1.3.1
+    time: 2018/05
+  - version: 1.3.2
+    time: 2018/05
+  - version: 1.4.0
+    time: 2018/05
+  - version: 1.5.0
+    time: 2018/05
+  - version: 1.5.1
+    time: 2018/06
+  - version: 1.6.0
+    time: 2018/06
+  - version: 1.6.1
+    time: 2018/06
+  - version: 1.6.2
+    time: 2018/06
+  - version: 1.7.0
+    time: 2018/06
+  - version: 1.7.1
+    time: 2018/06
+  - version: 1.7.2
+    time: 2018/06
+  - version: 1.7.3
+    time: 2018/06
+  - version: 1.8.0
+    time: 2018/06
+  - version: 1.9.0
+    time: 2018/07
+  - version: 1.9.1
+    time: 2018/07
+  - version: 1.9.2
+    time: 2018/07
+  - version: 1.10.0
+    time: 2018/07
+  - version: 1.10.1
+    time: 2018/07
+  - version: 1.10.2
+    time: 2018/08
+  - version: 1.10.3
+    time: 2018/08
+  - version: 1.10.4
+    time: 2018/08
+  - version: 1.11.0
+    time: 2018/08
+  - version: 1.12.0
+    time: 2018/08
+  - version: 1.13.0
+    time: 2018/08
+  - version: 1.13.1
+    time: 2018/09
+  - version: 1.13.2
+    time: 2018/09
+  - version: 1.13.3
+    time: 2018/09
+  - version: 1.13.4
+    time: 2018/09
+  - version: 1.14.0
+    time: 2018/09
+  - version: 1.14.1
+    time: 2018/09
+  - version: 1.14.2
+    time: 2018/10
+  - version: 1.14.3
+    time: 2018/10
+  - version: 1.15.0
+    time: 2018/11
+  - version: 1.15.1
+    time: 2018/11
+  - version: 1.15.2
+    time: 2018/12
+  - version: 1.15.3
+    time: 2019/01
+  - version: 1.16.0-dev
+    time: 2019/01
+  - version: 1.16.0
+    time: 2019/01
+  - version: 1.16.1
+    time: 2019/01
+  - version: 1.17.0
+    time: 2019/02
+  - version: 1.17.1
+    time: 2019/02
+  - version: 1.17.2
+    time: 2019/02
+  - version: 1.17.3
+    time: 2019/03
+  - version: 1.17.4
+    time: 2019/04
+  - version: 1.18.0
+    time: 2019/04
+  - version: 1.19.0
+    time: 2019/04
+  - version: 1.20.1
+    time: 2019/05
+  - version: 1.20.3
+    time: 2019/05
+  - version: 1.21.0
+    time: 2019/06
+  - version: 1.22.0
+    time: 2019/06
+  - version: 1.22.1
+    time: 2019/06
+  - version: 1.22.2
+    time: 2019/07
+  - version: 1.22.3
+    time: 2019/07
+  - version: 1.22.4
+    time: 2019/07
+  - version: 1.22.5
+    time: 2019/07
+  - version: 1.22.6
+    time: 2019/07
+  - version: 1.22.7
+    time: 2019/07
+  - version: 1.22.9
+    time: 2019/07
+  - version: 1.22.10
+    time: 2019/08
+  - version: 1.23.0-module.beta.1
+    time: 2019/09
+  - version: 1.22.12
+    time: 2019/09
+  - version: 1.23.0
+    time: 2019/10
+  - version: 1.23.1
+    time: 2019/10
+  - version: 1.23.2
+    time: 2019/10
+  - version: 1.23.3
+    time: 2019/11
+  - version: 1.23.5
+    time: 2019/11
+  - version: 1.23.6
+    time: 2019/11
+  - version: 1.23.7
+    time: 2019/11
+  - version: 1.24.0
+    time: 2019/12
+  - version: 1.24.1
+    time: 2020/01
+  - version: 1.24.2
+    time: 2020/01
+  - version: 1.24.3
+    time: 2020/01
+  - version: 1.24.4
+    time: 2020/01
+  - version: 1.24.5
+    time: 2020/01
+  - version: 1.25.0
+    time: 2020/01
+  - version: 1.25.1-test.1
+    time: 2020/01
+  - version: 1.26.0-test.1
+    time: 2020/02
+  - version: 1.26.0-test.2
+    time: 2020/02
+  - version: 1.26.0-test.3
+    time: 2020/02
+  - version: 1.26.0
+    time: 2020/02
+  - version: 1.26.1
+    time: 2020/02
+  - version: 1.26.2
+    time: 2020/02
+  - version: 1.26.3
+    time: 2020/03
+  - version: 1.26.5
+    time: 2020/04
+  - version: 1.26.6
+    time: 2020/05
+  - version: 1.26.7
+    time: 2020/05
+  - version: 1.26.8
+    time: 2020/06
+  - version: 1.26.9
+    time: 2020/06
+  - version: 1.26.10
+    time: 2020/07
+  - version: 1.26.11
+    time: 2020/09
+  - version: 1.26.12
+    time: 2020/10
+  - version: 1.27.0
+    time: 2020/10
+  - version: 1.27.1
+    time: 2020/10
+  - version: 1.27.2
+    time: 2020/10
+  - version: 1.28.0
+    time: 2020/10
+  - version: 1.29.0
+    time: 2020/11
+  - version: 1.30.0
+    time: 2020/12
+  - version: 1.32.0
+    time: 2020/12
+  - version: 1.32.1
+    time: 2021/01
+  - version: 1.32.2
+    time: 2021/01
+  - version: 1.32.3
+    time: 2021/01
+  - version: 1.32.4
+    time: 2021/01
+  - version: 1.32.5
+    time: 2021/01
+  - version: 1.32.6
+    time: 2021/02
+  - version: 1.32.7
+    time: 2021/02
+  - version: 1.32.8
+    time: 2021/02
+  - version: 1.32.9
+    time: 2021/04
+  - version: 1.32.10
+    time: 2021/04
+  - version: 1.32.11
+    time: 2021/04
+  - version: 1.32.12
+    time: 2021/04
+  - version: 1.32.13
+    time: 2021/05
+  - version: 1.33.0
+    time: 2021/05
+  - version: 1.34.0
+    time: 2021/05
+  - version: 1.34.1
+    time: 2021/06
+  - version: 1.35.0
+    time: 2021/06
+  - version: 1.35.1
+    time: 2021/06
+  - version: 1.35.2
+    time: 2021/07
+  - version: 1.36.0
+    time: 2021/07
+  - version: 1.37.0
+    time: 2021/07
+  - version: 1.37.1
+    time: 2021/08
+  - version: 1.37.2
+    time: 2021/08
+  - version: 1.37.3
+    time: 2021/08
+  - version: 1.37.4
+    time: 2021/08
+  - version: 1.37.5
+    time: 2021/08
+  - version: 1.38.0
+    time: 2021/08
+  - version: 1.38.1
+    time: 2021/08
+  - version: 1.38.2
+    time: 2021/08
+  - version: 1.39.0
+    time: 2021/09
+  - version: 1.39.1
+    time: 2021/09
+  - version: 1.39.2
+    time: 2021/09
+  - version: 1.40.0
+    time: 2021/09
+  - version: 1.40.1
+    time: 2021/09
+  - version: 1.41.0
+    time: 2021/09
+  - version: 1.41.1
+    time: 2021/09
+  - version: 1.42.0
+    time: 2021/09
+  - version: 1.42.1
+    time: 2021/09
+  - version: 1.43.2
+    time: 2021/10
+  - version: 1.43.3
+    time: 2021/10
+  - version: 1.43.4
+    time: 2021/10
+  - version: 1.43.5
+    time: 2021/11
+  - version: 1.44.0
+    time: 2021/11
+  - version: 1.45.0-rc.1
+    time: 2021/11
+  - version: 1.45.0-rc.2
+    time: 2021/12
+  - version: 1.45.0
+    time: 2021/12
+  - version: 1.45.1
+    time: 2021/12
+  - version: 1.45.2
+    time: 2021/12
+  - version: 1.46.0
+    time: 2022/01
+  - version: 1.47.0
+    time: 2022/01
+  - version: 1.48.0
+    time: 2022/01
+  - version: 1.49.0
+    time: 2022/01
+  - version: 1.49.1
+    time: 2022/01
+  - version: 1.49.2
+    time: 2022/02
+  - version: 1.49.3
+    time: 2022/02
+  - version: 1.49.4
+    time: 2022/02
+  - version: 1.49.5
+    time: 2022/02
+  - version: 1.49.6
+    time: 2022/02
+  - version: 1.49.7
+    time: 2022/02
+  - version: 1.49.8
+    time: 2022/02
+  - version: 1.49.9
+    time: 2022/02
+  - version: 1.49.10
+    time: 2022/03
+  - version: 1.49.11
+    time: 2022/04
+  - version: 1.50.0
+    time: 2022/04
+  - version: 1.50.1
+    time: 2022/04
+  - version: 1.51.0
+    time: 2022/04
+  - version: 1.52.0
+    time: 2022/05
+  - version: 1.52.1
+    time: 2022/05
+  - version: 1.52.2
+    time: 2022/06
+  - version: 1.52.3
+    time: 2022/06
+  - version: 1.53.0
+    time: 2022/06
+  - version: 1.54.0
+    time: 2022/07
+  - version: 1.54.1
+    time: 2022/08
+  - version: 1.54.2
+    time: 2022/08
+  - version: 1.54.3
+    time: 2022/08
+  - version: 1.54.4
+    time: 2022/08
+  - version: 1.54.5
+    time: 2022/08
+  - version: 1.54.6
+    time: 2022/08
+  - version: 1.54.7
+    time: 2022/08
+  - version: 1.54.8
+    time: 2022/08
+  - version: 1.54.9
+    time: 2022/09
+  - version: 1.55.0
+    time: 2022/09
+  - version: 1.56.0
+    time: 2022/11
+  - version: 1.56.1
+    time: 2022/11

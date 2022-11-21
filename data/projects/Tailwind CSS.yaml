@@ -3,3 +3,496 @@ category: Atomic CSS
 create: 2017/10
 home: https://tailwindcss.com/
 icon: https://avatars.githubusercontent.com/u/67109815?s=200&v=4
+versions:
+  - version: 0.0.1
+    time: 2017/10
+  - version: 0.1.0
+    time: 2017/11
+  - version: 0.1.1
+    time: 2017/11
+  - version: 0.1.2
+    time: 2017/11
+  - version: 0.1.3
+    time: 2017/11
+  - version: 0.1.4
+    time: 2017/11
+  - version: 0.1.5
+    time: 2017/11
+  - version: 0.1.6
+    time: 2017/11
+  - version: 0.2.0
+    time: 2017/11
+  - version: 0.2.1
+    time: 2017/11
+  - version: 0.2.2
+    time: 2017/11
+  - version: 0.3.0
+    time: 2017/12
+  - version: 0.4.0
+    time: 2017/12
+  - version: 0.4.1
+    time: 2018/01
+  - version: 0.4.2
+    time: 2018/03
+  - version: 0.4.3
+    time: 2018/03
+  - version: 0.5.0
+    time: 2018/03
+  - version: 0.5.1
+    time: 2018/03
+  - version: 0.5.2
+    time: 2018/03
+  - version: 0.5.3
+    time: 2018/05
+  - version: 0.6.0
+    time: 2018/06
+  - version: 0.6.1
+    time: 2018/06
+  - version: 0.6.2
+    time: 2018/07
+  - version: 0.6.3
+    time: 2018/07
+  - version: 0.6.4
+    time: 2018/07
+  - version: 0.6.5
+    time: 2018/08
+  - version: 0.6.6
+    time: 2018/09
+  - version: 0.7.0
+    time: 2018/10
+  - version: 0.7.1
+    time: 2018/11
+  - version: 0.7.2
+    time: 2018/11
+  - version: 0.7.3
+    time: 2018/12
+  - version: 0.7.4
+    time: 2019/01
+  - version: 1.0.0-beta.1
+    time: 2019/03
+  - version: 1.0.0-beta.2
+    time: 2019/03
+  - version: 1.0.0-beta.3
+    time: 2019/03
+  - version: 1.0.0-beta.4
+    time: 2019/03
+  - version: 1.0.0-beta.5
+    time: 2019/04
+  - version: 1.0.0-beta.6
+    time: 2019/04
+  - version: 1.0.0-beta.7
+    time: 2019/04
+  - version: 1.0.0-beta.8
+    time: 2019/04
+  - version: 1.0.0-beta.9
+    time: 2019/05
+  - version: 1.0.0-beta.10
+    time: 2019/05
+  - version: 1.0.0
+    time: 2019/05
+  - version: 1.0.1
+    time: 2019/05
+  - version: 1.0.2
+    time: 2019/05
+  - version: 1.0.3
+    time: 2019/06
+  - version: 1.0.4
+    time: 2019/06
+  - version: 1.0.5
+    time: 2019/07
+  - version: 1.0.6
+    time: 2019/08
+  - version: 1.1.0
+    time: 2019/08
+  - version: 1.1.1
+    time: 2019/08
+  - version: 1.1.2
+    time: 2019/08
+  - version: 1.2.0-canary.0
+    time: 2019/10
+  - version: 1.2.0-canary.1
+    time: 2019/10
+  - version: 1.1.3
+    time: 2019/10
+  - version: 1.1.4
+    time: 2019/11
+  - version: 1.2.0-canary.2
+    time: 2019/12
+  - version: 1.2.0-canary.3
+    time: 2020/01
+  - version: 1.2.0-canary.4
+    time: 2020/01
+  - version: 1.2.0-canary.5
+    time: 2020/01
+  - version: 1.2.0-canary.6
+    time: 2020/02
+  - version: 1.2.0-canary.7
+    time: 2020/02
+  - version: 1.2.0-canary.8
+    time: 2020/02
+  - version: 1.2.0
+    time: 2020/02
+  - version: 1.3.0
+    time: 2020/04
+  - version: 1.3.1
+    time: 2020/04
+  - version: 1.3.2
+    time: 2020/04
+  - version: 1.3.3
+    time: 2020/04
+  - version: 1.3.4
+    time: 2020/04
+  - version: 1.3.5
+    time: 2020/04
+  - version: 1.4.0
+    time: 2020/04
+  - version: 1.4.1
+    time: 2020/04
+  - version: 1.4.2
+    time: 2020/05
+  - version: 1.4.3
+    time: 2020/05
+  - version: 1.4.4
+    time: 2020/05
+  - version: 1.4.5
+    time: 2020/05
+  - version: 1.4.6
+    time: 2020/05
+  - version: 0.0.0-658250a96
+    time: 2020/07
+  - version: 1.5.0
+    time: 2020/07
+  - version: 1.5.1
+    time: 2020/07
+  - version: 1.5.2
+    time: 2020/07
+  - version: 1.6.0
+    time: 2020/07
+  - version: 1.6.1
+    time: 2020/08
+  - version: 1.6.2
+    time: 2020/08
+  - version: 1.6.3
+    time: 2020/08
+  - version: 1.7.0
+    time: 2020/08
+  - version: 1.7.1
+    time: 2020/08
+  - version: 1.7.2
+    time: 2020/08
+  - version: 1.7.3
+    time: 2020/08
+  - version: 1.7.4
+    time: 2020/08
+  - version: 1.7.5
+    time: 2020/08
+  - version: 1.7.6
+    time: 2020/08
+  - version: 1.8.0
+    time: 2020/09
+  - version: 1.8.1
+    time: 2020/09
+  - version: 1.8.2
+    time: 2020/09
+  - version: 1.8.3
+    time: 2020/09
+  - version: 1.8.4
+    time: 2020/09
+  - version: 1.8.5
+    time: 2020/09
+  - version: 1.8.6
+    time: 2020/09
+  - version: 1.8.7
+    time: 2020/09
+  - version: 1.8.8
+    time: 2020/09
+  - version: 1.8.9
+    time: 2020/09
+  - version: 1.8.10
+    time: 2020/09
+  - version: 1.8.11
+    time: 2020/10
+  - version: 1.8.12
+    time: 2020/10
+  - version: 1.8.13
+    time: 2020/10
+  - version: 1.9.0
+    time: 2020/10
+  - version: 1.9.1
+    time: 2020/10
+  - version: 1.9.2
+    time: 2020/10
+  - version: 1.9.3
+    time: 2020/10
+  - version: 1.9.4
+    time: 2020/10
+  - version: 1.9.5
+    time: 2020/10
+  - version: 2.0.0-alpha.1
+    time: 2020/10
+  - version: 1.9.6
+    time: 2020/10
+  - version: 2.0.0-alpha.2
+    time: 2020/10
+  - version: 2.0.0-alpha.3
+    time: 2020/10
+  - version: 2.0.0-alpha.4
+    time: 2020/10
+  - version: 2.0.0-alpha.5
+    time: 2020/10
+  - version: 2.0.0-alpha.6
+    time: 2020/11
+  - version: 2.0.0-alpha.7
+    time: 2020/11
+  - version: 2.0.0-alpha.8
+    time: 2020/11
+  - version: 2.0.0-alpha.9
+    time: 2020/11
+  - version: 2.0.0-alpha.10
+    time: 2020/11
+  - version: 2.0.0-alpha.11
+    time: 2020/11
+  - version: 2.0.0-alpha.12
+    time: 2020/11
+  - version: 2.0.0-alpha.13
+    time: 2020/11
+  - version: 2.0.0-alpha.14
+    time: 2020/11
+  - version: 2.0.0-alpha.15
+    time: 2020/11
+  - version: 2.0.0-alpha.16
+    time: 2020/11
+  - version: 2.0.0-alpha.17
+    time: 2020/11
+  - version: 2.0.0-alpha.18
+    time: 2020/11
+  - version: 2.0.0-alpha.19
+    time: 2020/11
+  - version: 2.0.0-alpha.20
+    time: 2020/11
+  - version: 2.0.0-alpha.21
+    time: 2020/11
+  - version: 2.0.0-alpha.22
+    time: 2020/11
+  - version: 2.0.0-alpha.23
+    time: 2020/11
+  - version: 2.0.0-alpha.23-compat
+    time: 2020/11
+  - version: 2.0.0-alpha.24
+    time: 2020/11
+  - version: 2.0.0-alpha.24-compat
+    time: 2020/11
+  - version: 2.0.0-alpha.25
+    time: 2020/11
+  - version: 2.0.0-alpha.25-compat
+    time: 2020/11
+  - version: 2.0.0
+    time: 2020/11
+  - version: 2.0.0-compat
+    time: 2020/11
+  - version: 2.0.1
+    time: 2020/11
+  - version: 2.0.1-compat
+    time: 2020/11
+  - version: 2.0.2
+    time: 2020/12
+  - version: 2.0.3
+    time: 2021/02
+  - version: 2.0.4
+    time: 2021/03
+  - version: 2.1.0-canary.1
+    time: 2021/04
+  - version: 2.1.0-canary.2
+    time: 2021/04
+  - version: 2.1.0
+    time: 2021/04
+  - version: 2.1.1
+    time: 2021/04
+  - version: 2.1.2
+    time: 2021/04
+  - version: 2.2.0-canary.1
+    time: 2021/05
+  - version: 2.2.0-canary.2
+    time: 2021/05
+  - version: 2.2.0-canary.3
+    time: 2021/05
+  - version: 2.2.0-canary.4
+    time: 2021/05
+  - version: 2.2.0-canary.5
+    time: 2021/05
+  - version: 2.2.0-canary.6
+    time: 2021/05
+  - version: 2.2.0-canary.7
+    time: 2021/05
+  - version: 2.2.0-canary.8
+    time: 2021/05
+  - version: 2.2.0-canary.9
+    time: 2021/05
+  - version: 2.2.0-canary.10
+    time: 2021/05
+  - version: 2.2.0-canary.11
+    time: 2021/05
+  - version: 2.1.3
+    time: 2021/06
+  - version: 2.1.4
+    time: 2021/06
+  - version: 2.2.0-canary.12
+    time: 2021/06
+  - version: 2.2.0-canary.13
+    time: 2021/06
+  - version: 2.2.0-canary.14
+    time: 2021/06
+  - version: 2.2.0-canary.15
+    time: 2021/06
+  - version: 2.2.0-canary.16
+    time: 2021/06
+  - version: 2.1.2-internal.1
+    time: 2021/06
+  - version: 2.1.2-internal.2
+    time: 2021/06
+  - version: 2.1.2-internal.3
+    time: 2021/06
+  - version: 2.1.2-internal.4
+    time: 2021/06
+  - version: 2.2.0
+    time: 2021/06
+  - version: 2.2.1
+    time: 2021/06
+  - version: 2.2.2
+    time: 2021/06
+  - version: 0.0.0-359252c
+    time: 2021/06
+  - version: 2.2.3
+    time: 2021/06
+  - version: 2.2.4
+    time: 2021/06
+  - version: 0.0.0-d782a78
+    time: 2021/06
+  - version: 0.0.0-1bb7ef9
+    time: 2021/06
+  - version: 0.0.0-92d1664
+    time: 2021/06
+  - version: 0.0.0-7db4c3a
+    time: 2021/06
+  - version: 0.0.0-c95bd53
+    time: 2021/06
+  - version: 0.0.0-5a9c68d
+    time: 2021/06
+  - version: 0.0.0-f90763a
+    time: 2021/06
+  - version: 0.0.0-34779b4
+    time: 2021/07
+  - version: 0.0.0-c905c8a2
+    time: 2021/07
+  - version: 2.2.5
+    time: 2021/07
+  - version: 2.2.6
+    time: 2021/07
+  - version: 2.2.7
+    time: 2021/07
+  - version: 2.2.8
+    time: 2021/08
+  - version: 2.2.9
+    time: 2021/08
+  - version: 2.2.10
+    time: 2021/09
+  - version: 2.2.11
+    time: 2021/09
+  - version: 2.2.12
+    time: 2021/09
+  - version: 2.2.13
+    time: 2021/09
+  - version: 2.2.14
+    time: 2021/09
+  - version: 2.2.15
+    time: 2021/09
+  - version: 2.2.16
+    time: 2021/09
+  - version: 3.0.0-alpha.1
+    time: 2021/10
+  - version: 2.2.17
+    time: 2021/10
+  - version: 2.2.18
+    time: 2021/10
+  - version: 2.2.19
+    time: 2021/10
+  - version: 3.0.0-alpha.2
+    time: 2021/11
+  - version: 3.0.0
+    time: 2021/12
+  - version: 3.0.1
+    time: 2021/12
+  - version: 3.0.2
+    time: 2021/12
+  - version: 3.0.3
+    time: 2021/12
+  - version: 3.0.4
+    time: 2021/12
+  - version: 3.0.5
+    time: 2021/12
+  - version: 3.0.6
+    time: 2021/12
+  - version: 3.0.7
+    time: 2021/12
+  - version: 3.0.8
+    time: 2021/12
+  - version: 3.0.9
+    time: 2022/01
+  - version: 3.0.10
+    time: 2022/01
+  - version: 3.0.11
+    time: 2022/01
+  - version: 3.0.12
+    time: 2022/01
+  - version: 3.0.13
+    time: 2022/01
+  - version: 3.0.14
+    time: 2022/01
+  - version: 3.0.15
+    time: 2022/01
+  - version: 3.0.16
+    time: 2022/01
+  - version: 3.0.17
+    time: 2022/01
+  - version: 3.0.18
+    time: 2022/01
+  - version: 3.0.19
+    time: 2022/02
+  - version: 3.0.20
+    time: 2022/02
+  - version: 3.0.21
+    time: 2022/02
+  - version: 3.0.22
+    time: 2022/02
+  - version: 3.0.23
+    time: 2022/02
+  - version: 3.0.24
+    time: 2022/04
+  - version: 3.1.0
+    time: 2022/06
+  - version: 3.1.1
+    time: 2022/06
+  - version: 3.1.2
+    time: 2022/06
+  - version: 3.1.3
+    time: 2022/06
+  - version: 3.1.4
+    time: 2022/06
+  - version: 3.1.5
+    time: 2022/07
+  - version: 3.1.6
+    time: 2022/07
+  - version: 3.1.7
+    time: 2022/07
+  - version: 3.1.8
+    time: 2022/08
+  - version: 3.2.0
+    time: 2022/10
+  - version: 3.2.1
+    time: 2022/10
+  - version: 3.2.2
+    time: 2022/11
+  - version: 3.2.3
+    time: 2022/11
+  - version: 3.2.4
+    time: 2022/11

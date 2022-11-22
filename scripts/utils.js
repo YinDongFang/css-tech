@@ -19,17 +19,6 @@ async function getRepoStargazers(repo, token, page) {
   });
 }
 
-exports.getRepoCreatedAt = async function (repo, token) {
-  const { data } = await axios.get(`https://api.github.com/repos/${repo}`, {
-    headers: {
-      Accept: 'application/vnd.github.v3.star+json',
-      Authorization: token ? `token ${token}` : '',
-    },
-  });
-
-  return data.created_at;
-}
-
 exports.getRepoStarRecords = async function (repo, token) {
   const patchRes = await getRepoStargazers(repo, token);
 

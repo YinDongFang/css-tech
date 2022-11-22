@@ -19,6 +19,7 @@
     "start": "next start",
     "export": "next build && next export",
     "lint": "next lint",
+    "update-create": "node ./scripts/update-create.js",
     "update-versions": "node ./scripts/update-versions.js",
     "update-downloads": "node ./scripts/update-downloads.js"
   },

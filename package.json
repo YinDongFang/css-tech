@@ -19,7 +19,7 @@
     "start": "next start",
     "export": "next build && next export",
     "lint": "next lint",
-    "update-version": "node ./scripts/update-version.js",
+    "update-versions": "node ./scripts/update-versions.js",
     "update-downloads": "node ./scripts/update-downloads.js"
   },
   "dependencies": {

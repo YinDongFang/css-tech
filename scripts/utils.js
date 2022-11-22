@@ -111,11 +111,12 @@ exports.getNpmPkgName = function (project) {
   return project.npm || project.repo.split('/')[1];
 }
 
+function getStringDate(year, month) {
+  return `${year}/${month < 10 ? '0' + month : month}`;
+}
+exports.getStringDate = getStringDate;
+
 exports.formatDate = function (dateString) {
   const date = new Date(dateString);
   return getStringDate(date.getFullYear(), date.getMonth() + 1);
-}
-
-exports.getStringDate = function (year, month) {
-  return `${year}/${month < 10 ? '0' + month : month}`;
 }

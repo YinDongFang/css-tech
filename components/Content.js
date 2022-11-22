@@ -2,7 +2,7 @@ import { Category } from './Category';
 import { Slider, ConfigProvider } from 'antd';
 import { useContext, useState } from 'react';
 import { ThemeContext } from '../pages';
-import { format, before } from '../utils/time';
+import { formatDate, before, formatBigNumber } from '../utils/project';
 
 const start = 2010;
 const months = (new Date().getFullYear() - start) * 12 + new Date().getMonth();
@@ -11,18 +11,17 @@ export function Content({ categorys }) {
   const { theme } = useContext(ThemeContext);
   const [step, setStep] = useState(0);
 
-  const formatted = format(start, step);
+  const formatted = formatDate(start, step);
 
   const filterredCategory = categorys
     .map(category => {
       return {
         ...category,
         projects: category.projects?.filter(project => before(project.create, formatted)).map(project => {
-          return {
-            ...project,
-            version: project.versions.filter(version => before(version.time, formatted)).pop()?.version
-          }
-        })
+          const version = project.versions[Object.keys(project.versions).reverse().find(time => before(time, formatted))];
+          const download = formatBigNumber(project.downloads[Object.keys(project.downloads).reverse().find(time => before(time, formatted))]);
+          return { ...project, version, download };
+        }),
       }
     })
     .filter(category => {
@@ -41,7 +40,7 @@ export function Content({ categorys }) {
         min={0}
         max={months}
         onChange={setStep}
-        tooltip={{ formatter: (v) => format(start, v) }}
+        tooltip={{ formatter: (v) => formatDate(start, v) }}
       />
       <div className="flex-col items-stretch">
         {filterredCategory.map((category) => (

@@ -111,47 +111,11 @@ exports.getNpmPkgName = function (project) {
   return project.npm || project.repo.split('/')[1];
 }
 
-async function getDownloadsOfDate(year, month, npmPkgNames) {
-  const daysOfMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-  const endTime = `${year}-${month < 10 ? '0' + month : month}-${daysOfMonth[month - 1]}`;
-  return await axios.get(`https://api.npmjs.org/downloads/point/${year}-01-01:${endTime}/${npmPkgNames.join(',')}`);
+exports.formatDate = function (dateString) {
+  const date = new Date(dateString);
+  return getStringDate(date.getFullYear(), date.getMonth() + 1);
 }
 
-exports.updateDownloads = async function (projects) {
-  const FROM = 1996;
-  const currentYear = new Date().getFullYear();
-  const currentMonth = new Date().getMonth();
-
-  const totalDownloads = {};
-  projects.forEach(project => {
-    project.npmPkgName = project.repo.split('/')[1];
-    totalDownloads[project.npmPkgName] = 0;
-  });
-  const npmPkgNames = projects.map(project => project.npmPkgName);
-
-  for (let year = FROM; year < currentYear; year++) {
-    for (let month = 1; month <= 12; month++) {
-      const stringDate = `${year}/${month < 10 ? '0' + month : month}`;
-      const missedProjects = projects
-        .filter(project => {
-          const firstVersionTime = project.versions[0].time;
-          return firstVersionTime < stringDate || firstVersionTime === stringDate;
-        })
-        .filter(project => {
-          return !project.donwloads.find(downloadInfo => downloadInfo.time === stringDate);
-        });
-      if (missedProjects.length) {
-        const data = await getDownloadsOfDate(year, month, npmPkgNames);
-        missedProjects.forEach(project => {
-          miss
-        });
-      }
-    }
-  }
-
-  projects.forEach(project => {
-    delete project.npmPkgName;
-  });
-
-  return projects;
+exports.getStringDate = function (year, month) {
+  return `${year}/${month < 10 ? '0' + month : month}`;
 }

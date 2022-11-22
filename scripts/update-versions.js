@@ -1,5 +1,5 @@
 const axios = require('axios');
-const { getProjects, saveProjects, getNpmPkgName } = require('./utils');
+const { getProjects, saveProjects, getNpmPkgName, getStringDate } = require('./utils');
 
 // support specifice filename
 // exp: pnpm update-version Sass 'Tailwind CSS'
@@ -13,7 +13,7 @@ if (targetProjects.length) {
   });
 }
 
-async function updateProjectVersion(project) {
+async function updateProjectVersions(project) {
   const npmPkgName = getNpmPkgName(project);
 
   const { data } = await axios.get(`https://registry.npmjs.org/${npmPkgName}`);
@@ -23,11 +23,11 @@ async function updateProjectVersion(project) {
   Object.keys(data.versions)
     .filter(version => npmPkgName !== 'tailwindcss' || !version.includes('insiders'))
     .forEach(version => {
-      const time = data.time[version].substr(0, 7).replace('-', '/');
+      const time = formatDate(data.time[version]);
       if (lastVersion) {
         while (lastVersion.time < time) {
           const [year, month] = lastVersion.time.split('/').map(Number);
-          const nextMonth = month === 12 ? `${year + 1}/01` : `${year}/${month + 1 < 10 ? `0` + (month + 1) : (month + 1)}`;
+          const nextMonth = month === 12 ? getStringDate(year + 1, 1) : getStringDate(year, month + 1);
           versions[nextMonth] = lastVersion.version;
           lastVersion.time = nextMonth;
         }
@@ -41,4 +41,4 @@ async function updateProjectVersion(project) {
   return project;
 }
 
-Promise.all(projects.map(updateProjectVersion)).then(saveProjects);
+Promise.all(projects.map(updateProjectVersions)).then(saveProjects);
